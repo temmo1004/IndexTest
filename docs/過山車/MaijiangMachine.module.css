@@ -1,0 +1,58 @@
+/* MaijiangMachine.module.css */
+
+/* 將整個元素設為 flex 容器，使其內部的元素水平排列 */
+.maijiangMachine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* 包含圖片和按鈕的容器樣式 */
+  .imageAndButtons {
+    display: flex; /* 將圖片和按鈕水平排列 */
+    align-items: flex-start; /* 將圖片和按鈕垂直靠上對齊 */
+    width: 50%; /* Set a fixed width for the container */
+    height: 400px; /* Set a fixed height for the container */
+    position: relative;
+  }
+  
+  /* 圖片容器的樣式 */
+  .imageContainer {
+    width: 100%; /* Make the image container occupy the full width of the imageAndButtons container */
+    height: 100%; /* Make the image container occupy the full height of the imageAndButtons container */
+    position: relative;
+  }
+  
+  /* 圖片的樣式 */
+  .image {
+    width: 100%; /* Make the image fill the imageContainer without stretching */
+    height: 100%; /* Make the image fill the imageContainer without stretching */
+    object-fit: cover; /* Fill the container while maintaining aspect ratio */
+  }
+  
+  /* 左右箭頭按鈕的容器樣式 */
+  .arrowButtonsContainer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  /* 左右箭頭按鈕的樣式 */
+  .arrowButtons {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    font-size: 24px;
+    color: #000;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  /* 內容區域的樣式 */
+  .content {
+    width: 50%;
+    padding: 20px;
+  }
+  
